@@ -134,3 +134,15 @@ STATICFILES_DIRS = [
 #media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+
+#SMTP Configuration
+EMAIL_HOST = 'smtp.zoho.in'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'mayank13singh@zohomail.in'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_SSL = True
